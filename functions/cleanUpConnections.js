@@ -37,7 +37,7 @@ export const cleanupconnections = onSchedule('every 30 minutes', async () => {
 
                 // Decrement the connection count
                 await chatRef.update({
-                    connection: admin.firestore.FieldValue.increment(-1),
+                    connections: admin.firestore.FieldValue.increment(-1),
                 });
                 console.log(`Decremented connection count for chat ${chatDoc.id}.`);
             }
