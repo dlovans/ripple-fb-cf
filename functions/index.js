@@ -4,5 +4,6 @@ admin.initializeApp()
 
 import { cleanupconnections } from "./cleanUpConnections.js";
 import { cleanupchats } from "./cleanUpChats.js";
+import { checkinactivechats } from "./checkInactiveChats.js";
 
-export { cleanupconnections, cleanupchats };
+export { cleanupconnections, cleanupchats, checkinactivechats };
